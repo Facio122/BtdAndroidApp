@@ -15,10 +15,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.btdapplication.R
-import com.example.btdapplication.composables.BtdText
-import com.example.btdapplication.composables.BtdTextField
-import com.example.btdapplication.themes.LocalBtDColorPalette
+import com.common.Icons
+import com.common.composables.BtdText
+import com.common.composables.BtdTextField
+import com.common.themes.LocalBtDColorPalette
 
 @Composable
 fun LogInScreen() {
@@ -39,7 +39,7 @@ fun LogInScreen() {
                 modifier = Modifier
                     .weight(0.6f)
                     .size(200.dp),
-                painter = painterResource(id = R.drawable.btd_icon),
+                painter = painterResource(id = Icons.BtdIcon),
                 tint = LocalBtDColorPalette.current.primary,
                 contentDescription = "Btd icon"
             )

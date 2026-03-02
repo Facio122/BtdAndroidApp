@@ -22,13 +22,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.btdapplication.composables.BtdButton
-import com.example.btdapplication.composables.BtdText
+import com.common.composables.BtdButton
+import com.common.composables.BtdText
+import com.common.themes.Colors.asphalt25
+import com.common.themes.Colors.asphalt50
+import com.common.themes.LocalBtDColorPalette
 import com.example.btdapplication.data.MainViewActions
 import com.example.btdapplication.data.SortKeyEnum
-import com.example.btdapplication.themes.Colors.asphalt25
-import com.example.btdapplication.themes.Colors.asphalt50
-import com.example.btdapplication.themes.LocalBtDColorPalette
 
 @Composable
 fun StatusSortDropdown(

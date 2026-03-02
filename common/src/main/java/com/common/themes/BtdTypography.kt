@@ -1,4 +1,4 @@
-package com.example.btdapplication.themes
+package com.common.themes
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

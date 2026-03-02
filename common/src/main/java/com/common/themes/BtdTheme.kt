@@ -1,14 +1,14 @@
-package com.example.btdapplication.themes
+package com.common.themes
 
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
-import com.example.btdapplication.themes.Colors.asphalt100
-import com.example.btdapplication.themes.Colors.asphalt50
-import com.example.btdapplication.themes.Colors.asphalt75
-import com.example.btdapplication.themes.Colors.bone
-import com.example.btdapplication.themes.Colors.darkAsphalt
-import com.example.btdapplication.themes.Colors.green
-import com.example.btdapplication.themes.Colors.redUnprofitable
+import com.common.themes.Colors.asphalt100
+import com.common.themes.Colors.asphalt50
+import com.common.themes.Colors.asphalt75
+import com.common.themes.Colors.bone
+import com.common.themes.Colors.darkAsphalt
+import com.common.themes.Colors.green
+import com.common.themes.Colors.redUnprofitable
 
 data class BtdColorPalette(
     val primary: Color,

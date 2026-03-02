@@ -1,28 +1,21 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
-    namespace = "com.example.btdapplication"
+    namespace = "com.example.acount"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.btdapplication"
-        minSdk = 30
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = 29
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-
-
     buildFeatures {
         compose = true
     }
-
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.3"
     }
@@ -37,12 +30,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
-
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
 }
 
@@ -56,9 +48,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(project(":common"))
-    implementation(project(":acount"))
-
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
 
     koin()
     compose()

@@ -15,9 +15,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.btdapplication.R
-import com.example.btdapplication.themes.Colors
-import com.example.btdapplication.themes.LocalBtDColorPalette
+import com.common.Icons
+import com.common.themes.Colors
+import com.common.themes.LocalBtDColorPalette
 
 @Composable
 fun LoadingScreen() {
@@ -31,7 +31,7 @@ fun LoadingScreen() {
         Icon(
             modifier = Modifier
                 .size(150.dp),
-            painter = painterResource(id = R.drawable.btd_icon),
+            painter = painterResource(id = Icons.BtdIcon),
             contentDescription = "Btd Icon",
             tint = LocalBtDColorPalette.current.primary,
         )

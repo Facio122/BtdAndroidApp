@@ -17,7 +17,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.btdapplication.themes.LocalBtDColorPalette
+import com.common.composables.BtdText
+import com.common.themes.LocalBtDColorPalette
 
 @Composable
 fun OrderCard(

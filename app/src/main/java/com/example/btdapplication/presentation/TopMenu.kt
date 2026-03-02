@@ -22,11 +22,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.btdapplication.R
-import com.example.btdapplication.composables.BtdText
+import com.common.composables.BtdText
+import com.common.themes.Colors
+import com.common.themes.LocalBtDColorPalette
 import com.example.btdapplication.data.MainViewActions
-import com.example.btdapplication.themes.Colors
-import com.example.btdapplication.themes.LocalBtDColorPalette
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -47,7 +46,7 @@ fun TopMenu(
                     ) {
                         Icon(
                             modifier = Modifier.size(40.dp),
-                            painter = painterResource(R.drawable.btd_icon),
+                            painter = painterResource(com.common.Icons.BtdIcon),
                             tint = Colors.green,
                             contentDescription = "Btd icon"
                         )

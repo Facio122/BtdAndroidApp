@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "BtD Application"
 include(":app")
+include(":acount")
+include(":common")

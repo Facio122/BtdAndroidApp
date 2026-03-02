@@ -20,9 +20,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.common.composables.BtdText
+import com.common.themes.LocalBtDColorPalette
 import com.example.btdapplication.data.OrderData
 import com.example.btdapplication.data.OrderStatus
-import com.example.btdapplication.themes.LocalBtDColorPalette
 
 @SuppressLint("DefaultLocale")
 @Composable

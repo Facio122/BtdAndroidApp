@@ -14,13 +14,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.btdapplication.composables.BtdText
+import com.common.composables.BtdText
 import com.example.btdapplication.composables.OrderTableCard
 import com.example.btdapplication.data.CategoryOrders
 import com.example.btdapplication.data.MainViewActions
 import com.example.btdapplication.data.OrderData
 import com.example.btdapplication.data.OrderStatus
-import com.example.btdapplication.themes.LocalBtDColorPalette
+import com.common.themes.LocalBtDColorPalette
 
 
 @Composable

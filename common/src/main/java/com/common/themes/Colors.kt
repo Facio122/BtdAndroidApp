@@ -1,4 +1,4 @@
-package com.example.btdapplication.themes
+package com.common.themes
 
 import androidx.compose.ui.graphics.Color
 
