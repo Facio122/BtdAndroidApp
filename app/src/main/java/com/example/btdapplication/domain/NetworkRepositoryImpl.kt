@@ -10,8 +10,7 @@ class NetworkRepositoryImpl(
 ) : NetworkRepository {
 
     private companion object {
-        const val BEARER_TOKEN = "\n" +
-                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIvYXBpL2N1c3RvbWVycy9hdXRoL2xvZ2luIiwiaWF0IjoxNzcyNDY0Mjg3LCJleHAiOjE3NzQyNzg2ODcsIm5iZiI6MTc3MjQ2NDI4NywianRpIjoiMWl5SDhSZ2Z5TTNTSVh4RyIsInN1YiI6NDQ5MjQsInBydiI6IjhiNDIyZTZmNjU3OTMyYjhhZWJjYjFiZjFlMzU2ZGQ3NmEzNjViZjIiLCJwbGFuIjoiZnVsbC1hY2Nlc3MiLCJleHBpcmVkX2F0Ijo0MTIyMzA5NjAwfQ.DNfBp9n7wk97Q-ihkaIVb4bZgBi1FtgXBd1kRBlZt24"
+        const val BEARER_TOKEN = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIvYXBpL2N1c3RvbWVycy9hdXRoL2xvZ2luIiwiaWF0IjoxNzcyNDY0Mjg3LCJleHAiOjE3NzQyNzg2ODcsIm5iZiI6MTc3MjQ2NDI4NywianRpIjoiMWl5SDhSZ2Z5TTNTSVh4RyIsInN1YiI6NDQ5MjQsInBydiI6IjhiNDIyZTZmNjU3OTMyYjhhZWJjYjFiZjFlMzU2ZGQ3NmEzNjViZjIiLCJwbGFuIjoiZnVsbC1hY2Nlc3MiLCJleHBpcmVkX2F0Ijo0MTIyMzA5NjAwfQ.DNfBp9n7wk97Q-ihkaIVb4bZgBi1FtgXBd1kRBlZt24"
     }
 
     override suspend fun getOrdersFromSpecificBot(botId: Int): OrdersResponseData? {

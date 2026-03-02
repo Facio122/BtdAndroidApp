@@ -61,7 +61,6 @@ class MainViewModel(
                 )
                 sortOrdersByCategory(SortKeyEnum.STRATEGY)
 
-                println("Fetching Data")
                 delay(FIVE_MINUTE)
             }
         }

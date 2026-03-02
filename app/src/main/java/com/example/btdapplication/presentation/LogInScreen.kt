@@ -1,5 +1,3 @@
-package com.example.btdapplication.presentation
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -45,18 +43,18 @@ fun LogInScreen() {
                 tint = LocalBtDColorPalette.current.primary,
                 contentDescription = "Btd icon"
             )
-            Spacer(modifier = Modifier.height(32.dp))
             BtdText(text = "Welcome in the Buy the Dip max data application", size = 24.sp)
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(48.dp))
+            BtdText(text = "Log In", size = 36.sp)
+            Spacer(modifier = Modifier.height(16.dp))
 
             Column(modifier = Modifier.weight(1f)) {
-                Spacer(modifier = Modifier.height(32.dp))
                 TextField(
                     topLabelText = "E-mail",
                     label = "email",
                     placeholder = "pass your email"
                 )
-                Spacer(modifier = Modifier.height(48.dp))
+                Spacer(modifier = Modifier.height(24.dp))
                 TextField(
                     topLabelText = "Password",
                     label = "password",
@@ -70,7 +68,7 @@ fun LogInScreen() {
 @Composable
 fun TextField(topLabelText: String = "", label: String = "", placeholder: String = "") {
     Column {
-        BtdText(topLabelText, modifier = Modifier.padding(bottom = 8.dp))
+        BtdText(topLabelText, modifier = Modifier.padding(bottom = 2.dp))
         BtdTextField(
             label = label,
             placeholder = placeholder,

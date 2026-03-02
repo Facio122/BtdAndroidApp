@@ -18,14 +18,14 @@ class GetOrdersDataUseCase(
 
         return orders?.orders?.map { order ->
             OrderData(
-                profitCurrency = order.pAndL?.toDouble() ?: 0.0,
-                profitPercent = order.profit?.toDouble() ?: 0.0,
+                profitCurrency = order.pAndL?.toDoubleOrNull() ?: 0.0,
+                profitPercent = order.profit?.toDoubleOrNull() ?: 0.0,
                 symbol = order.symbol,
                 botName = getBotName(order.botId),
                 status = mapStatusFromOrder(order.status),
                 orderDate = order.orderDate,
-                sellDate = try { order.sellDate.toLong() } catch(e: Exception) { 0 },
-                isProfit = (order.pAndL?.toDouble() ?: 0.0) > 0,
+                sellDate = order.sellDate.toLongOrNull() ?: 0L,
+                isProfit = (order.pAndL?.toDoubleOrNull() ?: 0.0) > 0,
             )
         } ?: emptyList()
     }
